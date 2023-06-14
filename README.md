@@ -18,7 +18,9 @@
 
 Ссылки на датасеты заказчика:
 https://drive.google.com/file/d/1pPOePt6SHrM_xNVGWuBLOjwBTYwXX9N2/view?usp=drive_link  (test dataset)
+
 https://drive.google.com/file/d/1l2Kuor1DsOPPeViwd1mQLL6zE578SJLe/view?usp=sharing  (train dataset)
+
 https://drive.google.com/file/d/1jInsh5FiQabLsfGWldzdC7ChqDTimdCs/view?usp=drive_link  (test dataset)
 
 Ссылка на ТЗ по раскадровке - https://docs.google.com/document/d/11SbjcFItnXCkLv0nqjfmA6D8bHNGYtp1OTRhbvdqrlA/edit?usp=sharing
