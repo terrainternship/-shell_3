@@ -27,3 +27,5 @@ https://drive.google.com/file/d/1jInsh5FiQabLsfGWldzdC7ChqDTimdCs/view?usp=drive
 
 
 Ссылка на таблицу с результатами экспериментов - https://docs.google.com/spreadsheets/d/1mkLEyEIA9nmPby4vUsFGXcbFgXwK8FxeHVyxBl4PKCM/edit?usp=sharing
+
+Ссылка на инструкцию по синхронизации гитхаба с коллабом : https://drive.google.com/file/d/1zWC-c83jeyatc55cIys8QKyM6NGhVW1I/view?usp=sharing
