@@ -1,4 +1,4 @@
-from datetime import timedelta
+from datetime import timedelta, datetime
 import cv2
 import numpy as np
 import os
@@ -46,6 +46,10 @@ def movie_to_img(video_file):
     saving_frames_durations = get_saving_frames_durations(cap, saving_frames_per_second)
     # запускаем цикл
     count = 0
+    #время для дополнительной маркировки фреймов
+    current_datetime = datetime.now()
+    str_time = f'{current_datetime.hour}{current_datetime.minute}{current_datetime.second}'
+
     while True:
         is_read, frame = cap.read()
         if not is_read:
@@ -63,7 +67,8 @@ def movie_to_img(video_file):
             # если ближайшая длительность меньше или равна длительности кадра,
             # затем сохраняем фрейм
             frame_duration_formatted = format_timedelta(timedelta(seconds=frame_duration))
-            cv2.imwrite(os.path.join(filename, f"frame{frame_duration_formatted}.jpg"), frame)
+
+            cv2.imwrite(os.path.join(filename, f"{str_time}frame{frame_duration_formatted}.jpg"), frame)
             # удалить точку продолжительности из списка, так как эта точка длительности уже сохранена
             try:
                 saving_frames_durations.pop(0)
