@@ -73,7 +73,7 @@ def movie_to_img(video_file):
     count = 0
     # время для дополнительной маркировки фреймов
     current_datetime = datetime.now()
-    str_time = f'ssv_Battle_in_market_{current_datetime.hour}{current_datetime.minute}{current_datetime.second}'
+    str_time = f'{current_datetime.hour}{current_datetime.minute}{current_datetime.second}' # аккуратно ту
 
     while True:
         is_read, frame = cap.read()
