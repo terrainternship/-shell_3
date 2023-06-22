@@ -5,6 +5,7 @@ import os
 
 SAVING_FRAMES_PER_SECOND = 2
 
+
 def format_timedelta(td):
     """Служебная функция для классного форматирования объектов timedelta (например, 00:00:20.05)
     исключая микросекунды и сохраняя миллисекунды"""
@@ -29,7 +30,6 @@ def get_saving_frames_durations(cap, saving_fps):
     return s
 
 
-
 def movie_to_img(video_file):
     filename, _ = os.path.splitext(video_file)
     filename += "-opencv"
@@ -46,7 +46,7 @@ def movie_to_img(video_file):
     saving_frames_durations = get_saving_frames_durations(cap, saving_frames_per_second)
     # запускаем цикл
     count = 0
-    #время для дополнительной маркировки фреймов
+    # время для дополнительной маркировки фреймов
     current_datetime = datetime.now()
     str_time = f'{current_datetime.hour}{current_datetime.minute}{current_datetime.second}'
 
@@ -78,9 +78,6 @@ def movie_to_img(video_file):
         count += 1
 
 
-
-
-
 if __name__ == '__main__':
     print("Текущая директория:", os.getcwd())
     cur_dir = str(input("Введите новую директорию: "))
@@ -94,5 +91,3 @@ if __name__ == '__main__':
         if file[-4:].lower() == '.mp4':
             print(file)
             movie_to_img(file)
-
-
